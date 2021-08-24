@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class=" wrapper">
+        <div>
+            <nav class="bg-gray-800 ">
+                <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <div class="relative flex items-center justify-between h-16">
+                        <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+                            <!-- Mobile menu button-->
+                            <button id="menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                                
+                                <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+                                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                                <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+                                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center sm:items-stretch md:justify-start">
+                            <div class="flex-shrink-0 flex items-center">
+                                <img class="block md:hidden h-8 w-auto" src="assets/img/20210810_132612.png" alt="Alpaca Fashion Academy">
+                                <img class="hidden mi md:block h-8 w-auto" src="assets/img/20210810_132612.png" alt="Alpaca Fashion Academy">
+                            </div>
+                            <div class="hidden md:block sm:ml-6">
+                                <div class="flex space-x-4">
+                                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                    <a href="/index.html" target="_blank" class="bg-gray-900  font-bold text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+
+                                    <a href="#" class=" font-bold text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+
+                                    <a href="#" class="font-bold text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Classes</a>
+
+                                    <a href="#" class="font-bold text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+
+                                    <a href="#" class="font-bold text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Meet Instructors</a>
+
+                                    <a href="#" class="font-bold text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Student Work</a>
+
+                                    <a href="#" class="font-bold text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                            <button type="button" class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                                <!-- Heroicon name: shopping cart -->
+                                <svg fill="white" class=" h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"/></svg>
+                            </button>
+
+                            <!-- Profile dropdown -->
+                            <div class="ml-3 relative">
+                                <div>
+                                    <button id="search" type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                        
+                                        <svg fill="white" class=" h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                                    </button>
+                                </div>
+
+                                <!--
+              Dropdown menu, show/hide based on menu state.
+  
+              Entering: "transition ease-out duration-100"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95"
+            -->
+                                <span id="drop" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                                    <!-- Active: "bg-gray-100", Not Active: "" -->
+                                    <input placeholder=" search" class="w-full p-3  focus:ring-gray-600" type="search">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu, show/hide based on menu state. -->
+                <div class="hidden transition-opacity duration-700 ease-in-out" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Classes</a>
+
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Meet Instructors</a>
+
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Student Work</a>
+
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="  mx-auto container">
+                <div class=" my-20">
+                    <h2 class=" p-10 border-b-8 text-7xl text-center">ABOUT US</h2>
+                </div>
+
+                <div class="md:grid container w-full mx-auto md:grid-cols-2 md:grid-rows-2 gap-1">
+                    <!-- col-1 -->
+                    <div class=" p-2 space-y-2 ">
+                        <div class=" p-4">
+                            <img class=" resize" src="assets/img/designs.jpg" alt=" High heels">
+                            <div class="p-2 space-y-4">
+                                <p class=" text-xl">Illustration skills are necessary to communicate ideas.</p>
+                                <p class=" text-xl">Design skills are necessary to transform ideas into garments.</p>
+                                <p class=" text-xl">Sewing skills are necessary either to produce a garment or to direct the production of others.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- col-2 -->
+                    <div class=" space-y-2 p-4  ">
+                        <h1 class=" p-3 text-2xl font-bold text-center">Is Seattle Fashion Academy for you?</h1>
+                        <p>Students of all ages and abilities are welcome at Seattle Fashion Academy. No prior knowledge, ability, or experience is required or presumed. Imaginative, creative beginning students are particularly encouraged!</p>
+
+                        <p>Academy instructors are all experienced, talented professionals currently working in fashion. Their teaching methods emphasize fundamental fashion design principles and helping students fully understand and master subject matter.
+                            By focusing on mastery of core skills, students will develop the confidence to tackle more difficult projects.</p>
+
+                        <p>Small class sizes are an important and effective element of the SFA approach. Class sizes rarely exceed 10 students. This enables instructors to treat every student as an individual.</p>
+
+                        <p>Students are encouraged to develop their own style as they design and produce their apparel. The goal for students at SFA is to demonstrate mastery in the skills they are taught, not to reproduce a particular look, and to understand
+                            the elements of good design, not to learn a single approach to design.</p>
+
+                        <p>SFA accepts the reality that people come in as many different shapes and sizes as there are humans. The fashion industry as a whole employs mass production techniques and standard sizing that allow clothes to be made cheaply and
+                            quickly. At SFA, we teach you how to make high-quality, beautiful clothes to fit your body, instead of expecting your body to fit the clothes.</p>
+                    </div>
+                    <div class="space-y-2 p-4  ">
+                        <h1 class=" text-2xl py-4">Mission Statement</h1>
+                        <p class="">Seattle Fashion Academy is a private, locally owned and operated, fashion design school. The academy's mission is to promote creativity and imagination by teaching proven industry techniques that will give students the foundation
+                            they need to achieve their fashion goals.</p>
+
+                        <p>SFA believes fashion is a skill-based art and vocation. In order for students to execute their design visions, they need a strong technical foundation. By studying and practicing couture techniques developed over hundreds of years,
+                            students learn to recognize true quality and create garments with couture-level construction and design.</p>
+
+                        <p>The basic skills necessary for placement or advancement in the fashion industry are: pattern design skills, fashion illustration skills, and sewing skills. SFA teaches these skills in the context of high fashion.</p>
+
+                        <p>Design, illustration, and sewing classes are each taught in a sequence of beginning, intermediate and advanced classes. These classes are in turn supported by a number of ancillary classes which broaden and enrich the scope of
+                            the student's education. Because classes are small and intensively taught by working professionals, students efficiently gain mastery and advance through the curriculum.</p>
+
+                        <p>In addition continuing the old school techniques, SFA looks forward to expanding its curriculum to include an exploration of textiles and their creation. This will further enhance the study of fashion art by deepening the students
+                            experience of creating unique garments from start to finish.</p>
+
+                    </div>
+                    <div class="space-y-6 p-6 ">
+                        <h1 class=" text-2xl py-4">The NYFA Legacy</h1>
+
+                        <p>New York Fashion Academy was founded in 1979 by Terry Horlamus and is the most awarded fashion school in Seattle.</p>
+
+                        <p>Terry is a professionally trained designer who received her education in New York. She chose to study in New York because the Seventh Ave. garment district is an important apparel and distribution center known for high quality
+                            sewing, and it has long been the creative epicenter of American fashion.</p>
+
+                        <p>NYFA teaches high fashion in the educational tradition of the Traphagen School of Design.</p>
+
+                        <p>Ethel Traphagen, who is credited with introducing shorts and slacks into American women's fashion, founded the Traphagen School of Design in New York City in the 1920s. The school was known for its technical orientation toward
+                            fashion design, with courses in pattern making and draping.
+
+
+                        </p>
+
+                        <p>Terry's goal in founding NYFA was to create an environment in which students could learn about New York-style high fashion and master the skills necessary to succeed in fashion. Since its opening, NYFA's mission has been to provide
+                            students with the technical foundation they need for placement or advancement in the industry.</p>
+
+                        <p>After 39 years of running NYFA, Terry is retiring and passing the curriculum and philosophy of the school to former student and current instructor and assistant director Candace Cantaloupe.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class=" py-4 px-4 bg-gray-800 fixed md:relative w-full bottom-0">
+                <div class=" ">
+                    <svg fill="white" class=" mx-auto w-10 h-10 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M423.5 0C339.5.3 272 69.5 272 153.5V224H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48h-48v-71.1c0-39.6 31.7-72.5 71.3-72.9 40-.4 72.7 32.1 72.7 72v80c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24v-80C576 68 507.5-.3 423.5 0z"/></svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
